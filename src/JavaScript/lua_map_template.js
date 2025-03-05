@@ -5,18 +5,18 @@ const readline = require('readline');
 
 function generateMapScript(){
 	
-	let mapName = readline.createInterface({
+	let userInput = readline.createInterface({
 		
 		input:process.stdin,
 		output:process.stdin
 		
 	});
-	mapName.question('Enter the map name ', name =>{
+	userInput.question('Enter the map name ', mapName =>{
 		
 		let scriptFolder = "script";
 	  let p = 'p';
-	  let mapFolderName = p+name;
-	  let mainMapScript = '_'+p+name+'.lua';
+	  let mapFolderName = p+mapName;
+	  let mainMapScript = '_'+p+mapName+'.lua';
 		let stateMapTemplate = `State
 {
 	StateName = INIT,
@@ -100,7 +100,7 @@ State
 			
 		}
 		
-		mapName.close();
+		userInput.close();
 		
 	});
 	

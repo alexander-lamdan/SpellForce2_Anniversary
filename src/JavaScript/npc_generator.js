@@ -5,7 +5,7 @@ const readline = require('readline');
 
 function generateNpc(){
 	
-	let npc_name = readline.createInterface({
+	let userInput = readline.createInterface({
 		
 		input:process.stdin,
 		output:process.stdin
