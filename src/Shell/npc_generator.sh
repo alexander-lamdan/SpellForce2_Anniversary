@@ -40,7 +40,7 @@ generate_npc () {
 		  echo "$LUA_COMMAND" >> "$NPC_NAME$i.lua"
       echo "$NPC_NAME$i.lua is generated"
   done
-  return 0
+  
 }
 generate_npc
 
@@ -63,9 +63,10 @@ generate_npc_actions () {
 
 	for ((i = 1; i <= $NPC_COUNT; i++ ))
 	  do
-		  echo "$SPELLFORCE_FUNCTION{Tag=\"$TAG_NAME$i\", X = $X_VALUE, Y = $Y_VALUE},"
+		  echo "$SPELLFORCE_FUNCTION{Tag=\"$TAG_NAME$i\", X = $X_VALUE, Y = $Y_VALUE}," >> npc_actions.txt
   done
-  return 0
+  exit
+  
 }
 
 generate_npc_actions
