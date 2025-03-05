@@ -52,7 +52,5 @@ function Generate-NpcActions {
   
   }
   
-  
-
 }
 Generate-NpcActions

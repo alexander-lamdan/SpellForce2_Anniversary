@@ -3,9 +3,9 @@
 const fs = require('fs');
 const readline = require('readline');
 
-function generateMapScript(){
+function generateNpc(){
 	
-	let mapName = readline.createInterface({
+	let npc_name = readline.createInterface({
 		
 		input:process.stdin,
 		output:process.stdin
@@ -13,4 +13,4 @@ function generateMapScript(){
 	});
 	
 }
-generateMapScript();
+generateNpc();
