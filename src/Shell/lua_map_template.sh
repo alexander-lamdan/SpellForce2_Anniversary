@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 generate_map_script () {
 
   echo "Enter the map name  "
@@ -52,8 +51,7 @@ State
   touch "$MAIN_MAP_SCRIPT"
   echo "$STATE_MAP_TEMPLATE" >> "$MAIN_MAP_SCRIPT"
   mv "$MAIN_MAP_SCRIPT" "$MAP_FOLDER_NAME/$SCRIPT_FOLDER"
-
-  
+  return 0
 }
 
 generate_map_script

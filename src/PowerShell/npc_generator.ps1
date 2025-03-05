@@ -1,6 +1,2 @@
-function Write-Hello {
-
-  Write-Output "Hey there"
-
-}
-Write-Hello
+Write-Host "Hey alex" -NoNewline
+Write-Host "Hey again"
